@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>meu primeiro site</title>
+</head>
+<body>
+    <header>
+        <h1>Quiz interativo para programadores</h1>
+       <p>teste seus conhecimentos em programação e veja a pontuação que vc obtem!</p> 
+        <hr>
+    </header>
+    <main>
+        <!-- introdução do q vai ser section 1-->
+        <section>
+            <h2>Sobre esse quiz</h2>
+            <p>Aqui voce ira testar seu conhecimento sobre <strong>programação</strong> e aprender tags,semanticas,oque e <abbr title="linguagem de marcação">html</abbr> e css</p>
+        </section>
+        <!-- pergunta 1= multipla escolha-->
+         <section>
+            <h2> 1: qual linguagemde programação e usada para instruturar paginas web?</h2>
+            <form >
+                <input type="radio" value="python" id="p1a" name="pergunta1">
+                <label for="p1a">python</label> <br>
+                <input type="radio" value="java" id="p1b" name="pergunta1">
+                <label for="p1b">java</label> <br>
+                <input type="radio" value="html" id="p1c" name="pergunta1">
+                <label for="p1c">html</label> <br>
+                <input type="radio" value="php" id="p1d" name="pergunta1">
+                <label for="p1d">php</label>
+
+            </form>
+         </section>
+         <!-- pergunta 2,texto-->
+          <section>
+            <h2>2:Na url http://www.google.com o trecho " google.com" e o _____</h2>
+            <form >
+                <input type="text" id="p2" name="pergunta2" placeholder="digite aqui">
+            </form>
+          </section>
+          <!-- pergunta 3,senha-->
+           <h2>3: escreva um exemplo de senha forte:</h2>
+          <form >
+        <input type="password" id="p3" name="pergunta3" placeholder="digite uma senha aqui">
+          </form>
+           <section>
+            <!--p4-->
+            <h2>4:em que ano o html lançou sua primeira versão?</h2>
+            <form>
+                <input type="date" id="p4" name="pergunta4">
+                        </form>
+               </section>
+               <section>
+                <h2>
+                5:Quais dessa tecnologias são consideradas linguagens de programação?
+                </h2>
+                <form>
+                <input type="checkbox" id="p5a" name="pergunta5" value="javaScript">
+                <label for="p5a">javaScript</label>
+                <input type="checkbox" id="p5b" name="pergunta5"  value="html">
+                <label for="p5b">html</label>
+                <input type="checkbox" id="p5c" name="pergunta5" value="java">
+                <label for="p5c">java</label>
+                <input type="checkbox" id="p5d" name="pergunta5"  value="css">
+                <label for="p5d">css</label>
+            </form>
+           </section>
+           <!-- pergunta 6 upload-->
+            <section>
+                <h3>6: faça o upload de um arquivo contendo codigo html.</h3>
+                <form>
+                    <input type="file" name="pergunta6" id="p5">
+                </form>
+            </section>
+            <section>
+                <!-- pergunta 7-->
+                 <h2>
+                    7:selecione o atributo do input que define o seu tipo.
+                 </h2>
+                 <select name="pergunta7" id="p7">
+                    <option value="id">id</option>
+                    <option value="type">type</option>
+                    <option value="placeholder">placeholder</option>
+                 </select>
+            </section>
+            <section><!-- pergunta 8 imagens-->
+                <h2>
+                    8: qual linguagem de programação e representada pelo logotipo abaixo?
+                </h2>
+              <figure>  <img src="https://www.shutterstock.com/image-vector/vector-illustration-icon-python-programming-260nw-1405339748.jpg" alt="python"><br>
+                <figcaption> figura 1:logo tipo de uma linguagem de programação</figcaption>
+            </figure>
+                <input type="text" id="p8" name="pergunta8" placeholder="didgite sua reposta aqui">
+            </section>
+            <!-- tabela de pontuação-->
+             <section>
+                <h2> tabela de pontuação</h2>
+                <table border="1">
+                    <tr>
+                        <th>pontuação</th>
+                        <th>avaliação</th>
+                    </tr>
+                    <tr>
+                        <td>0-2</td>
+                        <td>não desista.tente novamente
+
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td> parabens.sua evolução estar muito boa
+                    </tr>
+                    <tr>
+                        <td>5-6</td>
+                        <td>uou!! seu progresso estar otimo
+                    </tr>
+                    <tr>
+                        <td>7-8</td>
+                        <td>voce foi inclivel,meus parabens     
+                    </tr>
+                </table>
+             </section>
+             <section>
+                <h2>Verifique suas respostas</h2>
+               <details>
+                <summary>clique aqui para ver as respostas</summary>
+                <ul>
+                    <li>html</li>
+                    <li>dominio</li>
+                    <li>ab23!kao8Anmd</li>
+                    <li>1991</li>
+                    <li>javaScript,java</li>
+                    <li>arquivo deve ter extensão html</li>
+                    <li>type</li>
+                    <li>python</li>
+
+
+                </ul>
+            </details>
+             </section>
+             <section>
+                <h2>Nos der seu feedback</h2>
+              <form>
+                <fieldset>
+                    <legend>informações de contato</legend>
+                    <label for="nome">nome</label>
+                <input type="text" id="nome" name="nome"><br>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email"><br>
+                <label for="comentarios">comentarios</label><br>
+                <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="digite seus comentarios aqui"></textarea>
+                </fieldset>
+                
+                </form>
+             </section>
+    </main>
+    <footer></footer>
+    <a href="pagina2.html" target=" _blank">click para ver o criador</a>
+</body>
+</html>
