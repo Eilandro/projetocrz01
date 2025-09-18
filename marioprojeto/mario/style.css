@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.game{
+.game {
     width: 100%;
     height: 100vh;
     border-bottom: 30px solid green;
@@ -61,7 +61,7 @@ button:hover {
     width: 80px;
 }
 
-.mario{
+.mario {
     width: 150px;
     position: absolute;
     bottom: 0;
@@ -91,7 +91,6 @@ button:hover {
     from {
         right: -80px;
     }
-
     to {
         right: 100%;
     }
@@ -102,23 +101,7 @@ button:hover {
 }
 
 @keyframes jump {
-    0% {
-        bottom:0;
-    }
-
-    40% {
-        bottom: 200px;
-    }
-
-    50% {
-        bottom: 200px;
-    }
-
-    60% {
-        bottom: 200px;
-    }
-
-    100% {
-        bottom: 0;
-    }
+    0% { bottom:0; }
+    40%, 50%, 60% { bottom: 200px; }
+    100% { bottom: 0; }
 }
