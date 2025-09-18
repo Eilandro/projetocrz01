@@ -1,0 +1,227 @@
+:root {
+  --ouro: #efb810;
+  --azul: #0f1470;
+  --azul-claro: #1680C4;
+  --preto: #000;
+  --fundo: #0a0a0a;
+  --branco: #ffffff;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--fundo);
+  color: var(--branco);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+/* GERAIS */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.center {
+  text-align: center;
+}
+
+/* HEADER */
+.header {
+  background: var(--azul);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--ouro);
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--ouro);
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url('caminhao-bg.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: var(--ouro);
+}
+
+.hero h1 span {
+  color: var(--azul-claro);
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* BOTÃO */
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: var(--ouro);
+  color: var(--preto);
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--azul-claro);
+  color: var(--branco);
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 0;
+}
+
+.section.alt {
+  background: #111;
+}
+
+.section h2 {
+  font-size: 28px;
+  color: var(--ouro);
+  margin-bottom: 30px;
+}
+
+/* GRIDS */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* CARDS */
+.card {
+  background: #1a1a1a;
+  border-left: 5px solid var(--ouro);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  color: var(--ouro);
+  margin-bottom: 10px;
+}
+
+/* IMAGENS */
+.img-card {
+  background: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.img-card img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.img-card:hover img {
+  transform: scale(1.05);
+}
+
+.img-card p {
+  color: #ccc;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.img-responsive {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* FORMULÁRIO */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 15px;
+  background: #1a1a1a;
+  color: var(--branco);
+}
+
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+/* FOOTER */
+.footer {
+  background: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
