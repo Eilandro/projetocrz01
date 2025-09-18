@@ -11,7 +11,6 @@ let firstPosition = 0
 let lastPosition = items.length - 1
 
 function setSlider() {
- 
   let itemOld = container.querySelector('.list .item.active')
   itemOld.classList.remove('active')
 
@@ -35,3 +34,5 @@ prevButton.onclick = () => {
   setSlider()
   items[active].classList.add('active')
 }
+
+
