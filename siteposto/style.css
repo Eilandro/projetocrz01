@@ -9,6 +9,7 @@
   --dourado: #ffd700;
   --preto: #333333;
   --font: 'Arial', sans-serif;
+  --cor-principal: #4d7cfe;
 }
 
 /* ========================================= */
@@ -203,4 +204,114 @@ section {
   color: var(--branco);
   text-align: center;
   padding: 24px;
+}
+
+/* ========================================= */
+/* Estilos Adicionais (Botoes de Contato e Cursor) */
+/* ========================================= */
+.botoes-contato {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.botao-contato {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-weight: 500;
+  min-width: 160px;
+  text-decoration: none;
+  color: white;
+}
+
+.whatsapp { background-color: #25D366; }
+.email { background-color: #EA4335; }
+.linkedin { background-color: #0077B5; }
+.github { background-color: #333; }
+
+/* Efeito do cursor e efeito de hover em elementos interativos */
+.efeito-cursor {
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+}
+
+.efeito-cursor:hover {
+  transform: translateY(-10px);
+}
+
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(77, 124, 254, 0.5);
+  z-index: 99;
+  transform: translate(-50%, -50%);
+}
+
+/* Imagem da seção Sobre com efeito de profundidade */
+.sobre img {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid var(--dourado);
+  object-fit: cover;
+  box-shadow: 0 0 18px rgba(0,0,0,0.35);
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sobre img:hover {
+  transform: scale(1.05);
+}
+
+/* Efeito de overlay com degradê */
+.sobre img::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 119, 182, 0.3),
+    rgba(10, 17, 40, 0.7)
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px){
+  header {
+    padding: 20px;
+  }
+  ul {
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  .principal h1{
+    font-size: 50px;
+  }
+  .secao {
+    padding: 60px 20px;
+  }
+  .sobre{
+    grid-template-columns: 1fr;
+  }
+  .img-sobre {
+    height: auto;
+  }
 }
