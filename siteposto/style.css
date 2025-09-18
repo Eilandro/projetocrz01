@@ -1,13 +1,19 @@
+/* ========================================= */
+/* Variáveis (Custom Properties) */
+/* ========================================= */
 :root {
-  --azul: #005ca9;
-  --azul-escuro: #002b45;
-  --dourado: #f7c948;
+  --azul-escuro: #0a1128;
+  --azul: #0077b6;
+  --cinza: #f0f2f5;
   --branco: #ffffff;
-  --cinza: #f4f4f4;
-  --preto: #1f1f1f;
-  --font: 'Segoe UI', sans-serif;
+  --dourado: #ffd700;
+  --preto: #333333;
+  --font: 'Arial', sans-serif;
 }
 
+/* ========================================= */
+/* Estilos Gerais (Body, Container, Seções) */
+/* ========================================= */
 body {
   margin: 0;
   font-family: var(--font);
@@ -25,59 +31,9 @@ section {
   padding: 60px 0;
 }
 
-.navbar {
-  background-color: var(--azul-escuro);
-  padding: 20px 0;
-}
-
-.logo img {
-  height: 50px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 24px;
-  padding: 0;
-}
-
-.nav-links a {
-  color: var(--branco);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.hero {
-  background: url('hero.jpg') center/cover no-repeat;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  color: var(--branco);
-  text-align: center;
-  background-color: var(--azul-escuro);
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 16px;
-}
-
-.hero p {
-  font-size: 20px;
-  margin-bottom: 24px;
-}
-
-.btn {
-  background-color: var(--dourado);
-  color: var(--preto);
-  padding: 12px 24px;
-  border: none;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
+/* ========================================= */
+/* Componentes de Layout (Grid, Cards) */
+/* ========================================= */
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -102,6 +58,109 @@ section {
   min-width: 250px;
 }
 
+/* ========================================= */
+/* Estilos de Componentes Específicos */
+/* ========================================= */
+
+/* Botões */
+.btn {
+  background-color: var(--dourado);
+  color: var(--preto);
+  padding: 12px 24px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #e6b836;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--azul-escuro);
+  padding: 20px 0;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero.jpg') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  color: var(--branco);
+  text-align: center;
+  background-color: var(--azul-escuro);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+/* Planos Section (do Código 1) */
+.planos {
+  background-color: var(--cinza);
+}
+
+/* Depoimentos Section (do Código 1) */
+.depoimentos {
+  background-color: var(--branco);
+  text-align: center;
+}
+
+.depoimentos .card {
+  max-width: 700px;
+  margin: 0 auto;
+  font-style: italic;
+  border-left: none;
+  border-top: 5px solid var(--azul);
+}
+
+/* CTA Section (do Código 1) */
+.cta {
+  background-color: var(--azul);
+  color: var(--branco);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+/* Diferenciais Section */
 .diferenciais ul {
   list-style: none;
   padding: 0;
@@ -112,6 +171,7 @@ section {
   font-size: 18px;
 }
 
+/* Frota Section */
 .frota .galeria-frota {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -127,6 +187,7 @@ section {
   height: 200px;
 }
 
+/* Contato Section (do Código 2) */
 .contato form input,
 .contato form textarea {
   width: 100%;
@@ -136,10 +197,10 @@ section {
   border: 1px solid #ccc;
 }
 
+/* Footer */
 .footer {
   background-color: var(--azul-escuro);
   color: var(--branco);
   text-align: center;
   padding: 24px;
 }
-
