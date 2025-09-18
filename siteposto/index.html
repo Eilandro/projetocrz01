@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Transportadora São Matheus</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container flex between">
-      <div class="logo">São Matheus</div>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Transportadora São Matheus" />
+      </div>
       <nav>
-        <ul class="nav">
-          <li><a href="#home">Início</a></li>
+        <ul class="nav-links">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#frota">Frota</a></li>
           <li><a href="#cargas">Cargas</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
@@ -26,117 +28,119 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-overlay"></div>
-    <div class="container center hero-text">
-      <h1>Transporte de Combustíveis com <span>Excelência</span></h1>
-      <p>Segurança. Agilidade. Controle total da sua carga.</p>
-      <a href="#contato" class="btn">Solicitar Orçamento</a>
+  <section class="hero">
+    <div class="container">
+      <h1>Excelência no Transporte de Combustíveis</h1>
+      <p>Eficiência, tecnologia e compromisso com a sua carga</p>
+      <a href="#contato" class="btn">Solicite um Orçamento</a>
     </div>
   </section>
 
   <!-- SOBRE -->
-  <section class="section" id="sobre">
+  <section class="sobre" id="sobre">
     <div class="container grid-2">
       <div>
-        <h2>Quem Somos</h2>
-        <p>A Transportadora São Matheus atua há mais de 10 anos no transporte de combustíveis. Com frota moderna e tecnologia de rastreamento, garantimos entregas com segurança e eficiência.</p>
+        <h2>Sobre a São Matheus</h2>
+        <p>Com anos de experiência, a Transportadora São Matheus entrega combustível com segurança, agilidade e confiabilidade em todo o Brasil.</p>
       </div>
-      <div>
-        <img src="frota.jpg" alt="Nossa frota" class="img-responsive">
-      </div>
+      <img src="img-sobre.jpg" alt="Imagem sobre nós">
     </div>
   </section>
 
   <!-- SERVIÇOS -->
-  <section class="section alt" id="servicos">
+  <section class="servicos" id="servicos">
     <div class="container">
-      <h2>O que Oferecemos</h2>
+      <h2>Serviços</h2>
       <div class="cards">
-        <div class="card">
-          <h3>Transporte de Combustíveis</h3>
-          <p>Gasolina, Diesel, Etanol, GLP — com todos os certificados.</p>
-        </div>
-        <div class="card">
-          <h3>Monitoramento 24h</h3>
-          <p>Acompanhamento em tempo real da sua carga, em qualquer lugar.</p>
-        </div>
-        <div class="card">
-          <h3>Planejamento Logístico</h3>
-          <p>Rotas otimizadas, menor custo, maior eficiência.</p>
-        </div>
+        <div class="card"><h3>Transporte de Combustíveis</h3><p>Gasolina, Diesel, Etanol, GLP e mais.</p></div>
+        <div class="card"><h3>Rotas Estratégicas</h3><p>Atendimento ágil e seguro em todo território nacional.</p></div>
+        <div class="card"><h3>Gestão Logística</h3><p>Monitoramento e otimização de entregas em tempo real.</p></div>
       </div>
     </div>
   </section>
 
   <!-- FROTA -->
-  <section class="section" id="frota">
+  <section class="frota" id="frota">
     <div class="container">
       <h2>Nossa Frota</h2>
-      <div class="grid-3">
-        <div class="img-card">
-          <img src="caminhao1.jpg" alt="Caminhão 1">
-          <p>Caminhão tanque - Classe A</p>
-        </div>
-        <div class="img-card">
-          <img src="caminhao2.jpg" alt="Caminhão 2">
-          <p>Veículo com rastreamento em tempo real</p>
-        </div>
-        <div class="img-card">
-          <img src="caminhao3.jpg" alt="Caminhão 3">
-          <p>Frota atualizada 2025</p>
-        </div>
+      <div class="galeria-frota">
+        <img src="caminhao1.jpg" alt="Caminhão tanque" />
+        <img src="caminhao2.jpg" alt="Caminhão em operação" />
+        <img src="caminhao3.jpg" alt="Caminhão abastecendo" />
       </div>
     </div>
   </section>
 
   <!-- CARGAS -->
-  <section class="section alt" id="cargas">
+  <section class="cargas" id="cargas">
     <div class="container">
-      <h2>Nossas Operações</h2>
-      <div class="grid-3">
-        <div class="img-card">
-          <img src="carga1.jpg" alt="Carga combustível">
-          <p>Entrega de combustível em terminal</p>
+      <h2>Tipos de Cargas</h2>
+      <div class="cards">
+        <div class="card"><h3>Gasolina</h3><p>Transporte seguro e regulamentado.</p></div>
+        <div class="card"><h3>Diesel</h3><p>Distribuição para postos e frotas.</p></div>
+        <div class="card"><h3>Etanol</h3><p>Frota preparada com tanques especializados.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="diferenciais" id="diferenciais">
+    <div class="container">
+      <h2>Nossos Diferenciais</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>🚛 Frota de Alta Performance</h3>
+          <p>Caminhões modernos com rastreamento via satélite. Controle total da carga em tempo real.</p>
         </div>
-        <div class="img-card">
-          <img src="carga2.jpg" alt="Abastecimento">
-          <p>Abastecimento em grandes volumes</p>
+        <div class="card">
+          <h3>👨‍✈️ Equipe Especializada</h3>
+          <p>Motoristas certificados e experientes no transporte de combustíveis perigosos.</p>
         </div>
-        <div class="img-card">
-          <img src="carga3.jpg" alt="Logística em rota">
-          <p>Rota planejada com rastreio</p>
+        <div class="card">
+          <h3>🛡️ Segurança Rigorosa</h3>
+          <p>Cumprimento total das normas da ANP e ambientais. Segurança acima de tudo.</p>
+        </div>
+        <div class="card">
+          <h3>🧠 Logística Inteligente</h3>
+          <p>Roteiros otimizados, horários flexíveis e entregas pontuais — mesmo em trajetos críticos.</p>
+        </div>
+        <div class="card">
+          <h3>💬 Atendimento Personalizado</h3>
+          <p>Atendimento humano, rápido e adaptado às necessidades específicas do seu negócio.</p>
+        </div>
+        <div class="card">
+          <h3>⏱️ Monitoramento 24h</h3>
+          <p>Central ativa 24h monitorando sua carga e oferecendo suporte imediato se necessário.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CONTATO -->
-  <section class="section" id="contato">
+  <section class="contato" id="contato">
     <div class="container grid-2">
       <form>
-        <h2>Solicite um Orçamento</h2>
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
+        <h2>Fale Conosco</h2>
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu email" required />
         <textarea placeholder="Sua mensagem" required></textarea>
         <button type="submit" class="btn">Enviar</button>
       </form>
       <div>
-        <h3>Contato Direto</h3>
+        <h3>Informações</h3>
         <p><strong>Telefone:</strong> (33) 99999-9999</p>
         <p><strong>Email:</strong> contato@saomatheus.com</p>
         <p><strong>Endereço:</strong> Rua Exemplo, 123 - MG</p>
-        <img src="mapa.jpg" alt="Mapa da empresa" class="img-responsive">
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container center">
+    <div class="container">
       <p>&copy; 2025 Transportadora São Matheus. Todos os direitos reservados.</p>
     </div>
   </footer>
 
 </body>
 </html>
+
