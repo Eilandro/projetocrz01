@@ -103,7 +103,25 @@ section {
   font-weight: 500;
 }
 
-/* Hero Section */
+/* Faixa de Imagem entre a Navbar e o Hero */
+.faixa-caminhao {
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--azul-escuro);
+}
+
+.faixa-caminhao img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* HERO */
 .hero {
   background: url('hero.jpg') center/cover no-repeat;
   height: 90vh;
