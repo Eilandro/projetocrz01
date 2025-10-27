@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculadora Simples</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#111; color:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; }
+    .calc { background:#1a1a1a; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.5); text-align:center; }
+    input { width:80%; padding:10px; margin:10px 0; border:none; border-radius:5px; background:#333; color:#fff; font-size:16px; }
+    button { padding:10px 20px; border:none; border-radius:5px; background:#ff6b6b; color:#111; font-weight:bold; cursor:pointer; }
+    img { margin-top:15px; width:250px; border-radius:10px; display:none; }
+  </style>
+</head>
+<body>
+  <div class="calc">
+    <h2>Calculadora</h2>
+    <input type="number" id="num1" placeholder="Número 1">
+    <input type="number" id="num2" placeholder="Número 2">
+    <br>
+    <button onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">×</button>
+    <button onclick="calcular('/')">÷</button>
+    <br>
+    <img id="resultadoImg" src="WhatsApp Image 2025-10-14 at 08.23.33.jpeg" alt="resultado">
+  </div>
+
+  <script>
+    function calcular(operacao) {
+      const n1 = parseFloat(document.getElementById('num1').value);
+      const n2 = parseFloat(document.getElementById('num2').value);
+      if (isNaN(n1) || isNaN(n2)) return alert('Preencha ambos os números');
+      let resultado;
+      switch (operacao) {
+        case '+': resultado = n1 + n2; break;
+        case '-': resultado = n1 - n2; break;
+        case '*': resultado = n1 * n2; break;
+        case '/': resultado = n2 !== 0 ? n1 / n2 : 'Erro'; break;
+      }
+      // Mostra apenas a imagem no lugar do valor
+      const img = document.getElementById('resultadoImg');
+      img.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
