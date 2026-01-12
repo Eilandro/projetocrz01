@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOGZ Agency</title>
+
+  <meta name="description" content="Marketing, automação e IA para negócios locais">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="navbar">
+    <img src="img/logo.png" alt="NOGZ Agency" class="logo-img">
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-items" id="mobile-menu">
+      <div class="nav-item">Quem somos</div>
+      <div class="nav-item">Soluções</div>
+      <div class="nav-item">IA & Automação</div>
+    </nav>
+
+    <a href="https://wa.me/5533998588002" target="_blank" class="nav-button">
+      Fale Conosco
+    </a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+
+  <!-- Vídeo de fundo -->
+  <div class="video-bg">
+    <video autoplay muted loop playsinline>
+      <source src="img/0412 (1).mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="container">
+    <div class="hero-content">
+      <h1>
+        O marketing que
+        <span class="hero-purple">impulsiona</span><br>
+        o crescimento do seu negócio
+      </h1>
+
+      <p>
+        Marketing digital, automações inteligentes e inteligência artificial
+        aplicadas para gerar mais clientes e mais faturamento.
+      </p>
+
+      <a href="https://wa.me/5533998588002" class="cta-button">
+        Falar com especialista
+      </a>
+    </div>
+  </div>
+
+  <!-- Divisória visual -->
+  <div class="hero-divider"></div>
+
+</section>
+
+<!-- ================= DOR ================= -->
+<section class="pain">
+  <div class="container">
+    <h2>
+      Seu negócio é bom.<br>
+      O problema é que ele não cresce sozinho.
+    </h2>
+
+    <p>
+      Negócios locais perdem oportunidades todos os dias por falta de estratégia digital,
+      atendimento desorganizado e processos manuais.
+    </p>
+  </div>
+</section>
+
+<!-- ================= SOLUÇÕES ================= -->
+<section class="solutions">
+  <div class="container--solutions">
+    <div class="solutions-grid">
+
+      <div class="solutions-content">
+        <h2>Soluções estratégicas para escalar negócios locais</h2>
+        <p>
+          A NOGZ Agency integra marketing digital, automações e inteligência artificial
+          para criar sistemas que trabalham pelo seu negócio 24 horas por dia.
+        </p>
+        <a href="#" class="solution-button">Conhecer soluções</a>
+      </div>
+
+      <div class="solutions-image">
+        <img src="img/sphere.gif" alt="IA e automação">
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- IA -->
+<section class="ia">
+  <div class="container">
+    <h2>Inteligência Artificial aplicada ao seu negócio</h2>
+
+    <div class="ia-grid">
+      <div class="ia-card">
+        <h3>Atendimento automatizado</h3>
+        <p>Bots inteligentes no WhatsApp que respondem e qualificam clientes automaticamente.</p>
+      </div>
+
+      <div class="ia-card">
+        <h3>Organização de leads</h3>
+        <p>Leads organizados, segmentados e acompanhados sem perder oportunidades.</p>
+      </div>
+
+      <div class="ia-card">
+        <h3>Marketing inteligente</h3>
+        <p>Campanhas e mensagens personalizadas com decisões baseadas em dados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUÇÕES VISUAIS -->
+<section class="frota">
+  <div class="container">
+    <h2>Nossas <span class="hero-purple">Soluções</span></h2>
+
+    <div class="galeria-frota">
+      <img src="img/whatsapp.jpg" alt="Automação de WhatsApp">
+      <img src="img/marketing.jpg" alt="Marketing Digital">
+      <img src="img/resultados.jpg" alt="Resultados Reais">
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="diferenciais">
+  <div class="container">
+    <h2>Por que escolher a NOGZ?</h2>
+
+    <ul>
+      <li>Foco exclusivo em negócios locais</li>
+      <li>Integração real entre marketing, automação e IA</li>
+      <li>Soluções sob medida</li>
+      <li>Foco em crescimento e faturamento</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section class="processo">
+  <div class="container">
+    <h2>Nosso processo</h2>
+
+    <div class="processo-grid">
+      <span>Diagnóstico</span>
+      <span>Planejamento</span>
+      <span>Implementação</span>
+      <span>Otimização</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final-cta">
+  <div class="container">
+    <h2>Pronto para estruturar o crescimento do seu negócio?</h2>
+    <a href="https://wa.me/5533998588002" class="cta-button">
+      Falar com especialista
+    </a>
+  </div>
+</section>
+
+<!-- MENU MOBILE -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('mobile-menu');
+
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+</script>
+</body>
+</html>
+
